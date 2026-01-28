@@ -1,9 +1,0 @@
-footer {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    grid-column: 1/-1; 
-    border-top: 1px solid black;
-    margin-top: 30px;
-    font-size: 1.3rem;
-    /* bottom: 0;  */
-}
