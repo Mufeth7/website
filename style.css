@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  background-color: #430D14;
+}
+body{
+  display: grid;
+  grid-template-columns: [first] 1fr [second] 3fr [third] 1fr [forth];
+  grid-template-rows: [first] 80px [second] 2fr [third] 100px [fourth]; */
+  background-color: #fff1d0;
+  font-family: "Story Script", sans-serif;
+}
+
+header{
+  grid-column: 1/4;
+  text-align: center;
+}
+
+main{
+  grid-column: 2;
+  grid-row: 2;
+  outline: 15px solid black;
+  background-color: grey; 
+  border-radius: 10px;
+  height: 400px; 
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+article{
+  color: #333;
+  flex-grow: 2;
+}
+nav{
+  color:white;
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+/* Tabs using CSS*/
+
+.hide{
+  display: none;
+}
+
+#on:checked ~ .hide{
+  display: block;
+}
+nav:has(#on:checked) ~ article{
+  background-color: #E1CDC1;
+}
+
+#on:checked ~ .on-hide{
+  display: none;
+}
+
+nav:has(#off:checked) ~ article{
+  display: none;
+}
+
+
+section{
+  display: none;
+} 
+ nav:has(#intro:checked) ~ article .intro,
+ nav:has(#blog:checked) ~ article .blog,
+ nav:has(#games:checked) ~ article .gaming,
+ nav:has(#contact:checked) ~ article .contact{
+   display: block;
+   background-color: #E1CDC1;
+ }
+
+/**/
+
+footer{
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  justify-content: space-between;
+} 
+footer div{
+  margin: 1px 0 0 5px;
+  border-radius: 20px;
+  outline-offset: 3px;
+  outline: 2px solid black;
+  height: 50px;
+  width: 10px;
+  background-color: black;
+  align-content: center;
+}
+
+input{
+  visibility: hidden;
+}
+label{
+  color: #e8eddf;
+  background-color: #242423;
+  padding: 4px;
+  border-radius: 12px;
+  font-size: 10px;
+}
+
+input:checked + label,
+input:hover + label{
+  color: white;
+}
+
+
+
+/*header style*/
+
+header h1{
+  font: normal 230% 'Playwrite GB S', cursive;
+  text-transform: lowercase;
+  color: #faedcd;
+  text-shadow: 0.06em 0.06em 0 #7f5539;
+}
+
+section h1{
+  margin: 7px;
+  text-align: center;
+  font-family: "Henny Penny", system-ui;
+  color: #430D14;
+  font-size: 2.5rem;
+}
+
+section p{
+  margin: 7px;
+  font-size: 1.2rem;
+}
+
+em{
+  font-family: 'Corinthia', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #430D14;
+}
+
+.on-hide, .on-hide:hover{
+  color: green;
+}
+
+
+.off-hide, .off-hide:hover{
+  color: red;
+}
