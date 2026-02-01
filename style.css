@@ -3,13 +3,13 @@
   box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
   font-family: 'Corinthia';
   src: url('fonts/Corinthia/Corinthia-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Henny_penny' ;
+  font-family: 'Henny_penny';
   src: url('fonts/Henny_Penny/HennyPenny-Regular.ttf') format('truetype');
 }
 
@@ -21,7 +21,7 @@
 @font-face {
   font-family: 'Zalando_Sans';
   src: url('fonts/Zalando_Sans_Expanded/ZalandoSansExpanded-Italic-VariableFont_wght.ttf') format('truetype'),
-       url('fonts/Zalando_Sans_Expanded/ZalandoSansExpanded-VariableFont_wght.ttf') format('truetype');
+    url('fonts/Zalando_Sans_Expanded/ZalandoSansExpanded-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
@@ -73,18 +73,17 @@ nav {
 
 /* Tabs using CSS*/
 
- .hide {  
-  display: none;  
+.hide {
+  display: none;
 }
 
 #on:checked~.hide {
-  display: block;  
+  display: block;
 }
 
 nav:has(#on:checked)~article {
-  background-color: #E1CDC1; 
+  background-color: #E1CDC1;
 }
-
 
 #on:checked~.on-hide {
   display: none;
@@ -93,7 +92,6 @@ nav:has(#on:checked)~article {
 nav:has(#off:checked)~article {
   display: none;
 }
-
 
 section {
   display: none;
@@ -144,8 +142,6 @@ input:hover+label {
   color: white;
 }
 
-
-
 /*header style*/
 
 header h1 {
@@ -180,8 +176,11 @@ em {
   color: green;
 }
 
-
 .off-hide,
 .off-hide:hover {
   color: red;
+}
+
+label:active{
+  transform: translateY(3px);
 }
