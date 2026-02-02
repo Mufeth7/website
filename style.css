@@ -37,7 +37,7 @@ html {
 body {
   display: grid;
   grid-template-columns: [first] 1fr [second] 3fr [third] 1fr [forth];
-  grid-template-rows: [first] 80px [second] 2fr [third] 100px [fourth];
+  grid-template-rows: [first] 15vh [second] 70vh [third] 15vh [fourth];
   font-family: "Story_Script", sans-serif;
 }
 
@@ -52,7 +52,7 @@ main {
   outline: 15px solid black;
   background-color: grey;
   border-radius: 10px;
-  height: 400px;
+  min-height: 70vh;
   overflow-x: auto;
   display: flex;
   flex-direction: column-reverse;
@@ -149,6 +149,7 @@ header h1 {
   text-transform: lowercase;
   color: #faedcd;
   text-shadow: 0.06em 0.06em 0 #7f5539;
+  font-size: 4rem;
 }
 
 section h1 {
@@ -156,17 +157,17 @@ section h1 {
   text-align: center;
   font-family: "Henny_Penny", system-ui;
   color: #430D14;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 section p {
   margin: 7px;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
 }
 
 em {
   font-family: 'Corinthia', cursive;
-  font-size: 2rem;
+  font-size: 2.7rem;
   font-weight: 600;
   color: #430D14;
 }
